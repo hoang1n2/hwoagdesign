@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang web bán hàng với các sản phẩm chất lượng, giao diện hiện đại và tính năng thanh toán dễ dàng">
+    <meta name="keywords" content="bán hàng, mua sắm, sản phẩm, giỏ hàng, thanh toán trực tuyến, đánh giá">
+    <title>Trang Web Bán Hàng Nâng Cao</title>
+    <style>
+        /* CSS - Tổng quan */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 1.2rem;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .product button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Search and Filter */
+        .search-filter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .search-filter input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-filter select {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Cart and Checkout */
+        .cart {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .cart:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content h2 {
+                font-size: 2rem;
+            }
+
+            .product {
+                padding: 15px;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Trang Web Bán Hàng</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Chào Mừng Đến Với Trang Web Của Chúng Tôi</h2>
+        <p>Khám phá các sản phẩm chất lượng và mua sắm dễ dàng với giao diện hiện đại và tiện ích thông minh.</p>
+
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            <select>
+                <option value="">Lọc theo giá</option>
+                <option value="low">Giá thấp nhất</option>
+                <option value="high">Giá cao nhất</option>
+            </select>
+        </div>
+
+        <!-- Products -->
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 1">
+                <h3>Sản Phẩm 1</h3>
+                <p>Giá: 1,000,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 2">
+                <h3>Sản Phẩm 2</h3>
+                <p>Giá: 1,500,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 3">
+                <h3>Sản Phẩm 3</h3>
+                <p>Giá: 2,000,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 4">
+                <h3>Sản Phẩm 4</h3>
+                <p>Giá: 2,500,000 VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Button -->
+    <div class="cart">
+        🛒
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Trang Web Bán Hàng. Tất cả các quyền được bảo vệ.</p>
+    </footer>
+
+    <script>
+        // JavaScript cho giỏ hàng
+        document.querySelector('.cart').addEventListener('click', function() {
+            alert('Giỏ hàng của bạn đang trống.');
+        });
+    </script>
+
+</body>
+
+</html>
